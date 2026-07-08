@@ -1,0 +1,182 @@
+.featured {
+    padding: 100px 8%;
+    background: #0b0b0f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.section-tag {
+    color: #8b5cf6;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+
+.section-title {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+
+.section-title span {
+    color: #8b5cf6;
+}
+
+
+.project-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 24px;
+    padding: 45px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(139,92,246,0.5);
+}
+
+
+
+.project-content h3 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+
+.project-description {
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 45px;
+}
+
+
+
+.project-section {
+    background: #15151c;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+
+.project-section h4 {
+    color: #8b5cf6;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+
+.project-section p {
+    color: #d1d5db;
+    line-height: 1.8;
+}
+
+
+
+.impact-list {
+    padding-left: 20px;
+}
+
+
+.impact-list li {
+    color: #d1d5db;
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+
+
+.tech-stack span {
+    background: rgba(139,92,246,0.15);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    border: 1px solid rgba(139,92,246,0.3);
+}
+
+
+
+@media(max-width:900px){
+
+    .featured{
+        padding:70px 5%;
+    }
+
+
+    .section-title{
+        font-size:36px;
+    }
+
+
+    .project-card{
+        padding:25px;
+    }
+
+}
+.ai-preview{
+    background:#11111a;
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:40px;
+}
+
+
+.ai-header{
+    display:flex;
+    gap:8px;
+    margin-bottom:30px;
+}
+
+
+.ai-header span{
+    width:10px;
+    height:10px;
+    background:#8b5cf6;
+    border-radius:50%;
+}
+
+
+.ai-content h3{
+    color:white;
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+
+.ai-content p{
+    color:#94a3b8;
+    margin-bottom:25px;
+}
+
+
+.ai-feature{
+    background:#18181f;
+    color:#e2e8f0;
+    padding:15px 18px;
+    border-radius:12px;
+    margin-bottom:12px;
+    border:1px solid rgba(255,255,255,0.05);
+}

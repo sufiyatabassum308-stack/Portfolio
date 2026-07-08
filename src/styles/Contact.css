@@ -1,0 +1,63 @@
+.contact{
+padding:120px 8%;
+}
+
+.contact-box{
+padding:70px;
+text-align:center;
+}
+
+.contact-desc{
+max-width:700px;
+margin:25px auto 50px;
+}
+
+.contact-links{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-bottom:45px;
+}
+
+.contact-item{
+display:flex;
+align-items:center;
+gap:20px;
+padding:25px;
+border-radius:18px;
+background:rgba(255,255,255,.04);
+transition:.35s;
+}
+
+.contact-item:hover{
+background:rgba(124,58,237,.15);
+transform:translateY(-6px);
+}
+
+.contact-item svg{
+font-size:30px;
+color:#7c3aed;
+}
+
+.contact-item h4{
+margin-bottom:6px;
+}
+
+.resume-download{
+background:linear-gradient(135deg,#7c3aed,#9333ea);
+border:none;
+padding:16px 32px;
+border-radius:12px;
+font-size:16px;
+font-weight:600;
+color:white;
+display:inline-flex;
+align-items:center;
+gap:12px;
+transition:.3s;
+}
+
+.resume-download:hover{
+transform:translateY(-4px);
+box-shadow:0 20px 40px rgba(124,58,237,.35);
+}
