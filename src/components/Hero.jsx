@@ -71,12 +71,12 @@ function Hero() {
   </a>
 
   <a
-    href="/resume/Sufiya(2026).pdf"
-    download
-    className="secondary-btn"
-  >
-    Download Resume
-  </a>
+  href="/resume/Sufiya(2026).pdf"
+  download
+  className="secondary-btn"
+>
+  Download Resume
+</a>
 </div>
         </motion.div>
 
