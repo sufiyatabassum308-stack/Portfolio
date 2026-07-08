@@ -3,7 +3,6 @@ import {
   FaEnvelope,
   FaGithub,
   FaLinkedin,
-  FaFileDownload,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -75,10 +74,7 @@ function Contact() {
 
           </div>
 
-          <button className="resume-download">
-            <FaFileDownload />
-            Download Resume
-          </button>
+          
 
         </motion.div>
 
