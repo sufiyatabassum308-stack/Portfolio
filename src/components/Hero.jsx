@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import {
   FaGithub,
   FaLinkedin,
-  FaDownload,
   FaArrowRight,
 } from "react-icons/fa";
 

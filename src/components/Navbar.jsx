@@ -32,9 +32,7 @@ function Navbar() {
 
         <a href="https://www.linkedin.com/in/sufiya-tabassum-481237276" target="_blank" rel="noreferrer">
           <FaLinkedin />
-        </a>
-
-        <button>Resume</button>
+    </a>
       </div>
     </motion.nav>
   );

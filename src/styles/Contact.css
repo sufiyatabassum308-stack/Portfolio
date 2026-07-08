@@ -43,21 +43,3 @@ color:#7c3aed;
 margin-bottom:6px;
 }
 
-.resume-download{
-background:linear-gradient(135deg,#7c3aed,#9333ea);
-border:none;
-padding:16px 32px;
-border-radius:12px;
-font-size:16px;
-font-weight:600;
-color:white;
-display:inline-flex;
-align-items:center;
-gap:12px;
-transition:.3s;
-}
-
-.resume-download:hover{
-transform:translateY(-4px);
-box-shadow:0 20px 40px rgba(124,58,237,.35);
-}
