@@ -69,15 +69,7 @@ function Hero() {
   <a href="#featured" className="primary-btn">
     View Projects
   </a>
-
-  <a
-  href="/resume/Sufiya(2026).pdf"
-  download
-  className="secondary-btn"
->
-  Download Resume
-</a>
-</div>
+          </div>
         </motion.div>
 
         {/* RIGHT */}
