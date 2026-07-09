@@ -1,5 +1,5 @@
 import "../styles/FeaturedProject.css";
-
+import { motion } from "framer-motion";
 
 function FeaturedProject() {
   return (
@@ -12,54 +12,32 @@ function FeaturedProject() {
           AURA AI <span>Workspace</span>
         </h2>
 
-        <div className="project-card glass">
+        <motion.div
+          className="featured-grid"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: .6 }}
+          viewport={{ once: true }}
+        >
 
-  <div className="ai-preview">
+          {/* LEFT */}
 
-    <div className="ai-header">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+          <div className="featured-left">
 
-    <div className="ai-content">
+            <div className="info-box">
+              <h3>AI-Powered Document Intelligence Platform</h3>
 
-      <h3>AURA AI</h3>
+              <p>
+                AURA AI is an intelligent document assistant that allows users
+                to upload PDF documents, ask questions in natural language,
+                generate AI-powered summaries, and retrieve contextual
+                information using Large Language Models and
+                Retrieval-Augmented Generation (RAG).
+              </p>
+            </div>
 
-      <p>
-        Intelligent Document Workspace
-      </p>
-
-      <div className="ai-feature">
-        PDF Upload
-      </div>
-
-      <div className="ai-feature">
-        AI Question Answering
-      </div>
-
-      <div className="ai-feature">
-        RAG Powered Search
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <div className="project-content">
-
-            <h3>AI-Powered Document Intelligence Platform</h3>
-
-            <p className="project-description">
-              AURA AI is an intelligent document assistant that allows users to
-              upload PDF documents, ask questions in natural language, generate
-              AI-powered summaries, and retrieve contextual information using
-              Large Language Models and Retrieval-Augmented Generation (RAG).
-            </p>
-
-            <div className="project-section">
-              <h4>Problem</h4>
+            <div className="info-box">
+              <h3>Problem</h3>
 
               <p>
                 Reading lengthy documents manually is time-consuming and finding
@@ -68,8 +46,8 @@ function FeaturedProject() {
               </p>
             </div>
 
-            <div className="project-section">
-              <h4>Solution</h4>
+            <div className="info-box">
+              <h3>Solution</h3>
 
               <p>
                 Developed an AI-powered document workspace using FastAPI,
@@ -79,42 +57,58 @@ function FeaturedProject() {
               </p>
             </div>
 
-            <div className="project-section">
-              <h4>My Role</h4>
+          </div>
+
+          {/* RIGHT */}
+
+          <div className="featured-right">
+
+            <div className="info-box">
+              <h3>My Role</h3>
 
               <p>
-                Designed and developed the backend architecture, implemented
-                document processing, integrated LLM APIs, created REST APIs,
-                built the Retrieval-Augmented Generation pipeline, and managed
-                vector embeddings for semantic search.
+                Designed and developed the backend architecture,
+                implemented document processing,
+                integrated LLM APIs,
+                created REST APIs,
+                built the Retrieval-Augmented Generation pipeline,
+                and managed vector embeddings for semantic search.
               </p>
             </div>
 
-            <div className="project-section">
-              <h4>Challenges</h4>
+            <div className="info-box">
 
-              <ul className="impact-list">
+              <h3>Challenges</h3>
+
+              <ul>
+
                 <li>Processed large PDF documents efficiently.</li>
                 <li>Maintained contextual responses using RAG.</li>
                 <li>Integrated Gemini API with FastAPI backend.</li>
                 <li>Optimized semantic search using vector embeddings.</li>
+
               </ul>
+
             </div>
 
-            <div className="project-section">
-              <h4>Impact</h4>
+            <div className="info-box">
 
-              <ul className="impact-list">
-                <li>Reduced manual document reading through AI-powered question answering.</li>
-                <li>Delivered contextual responses instead of simple keyword search.</li>
-                <li>Built a scalable backend following modular architecture.</li>
-                <li>Demonstrated practical implementation of LLMs, RAG, and vector databases.</li>
+              <h3>Impact</h3>
+
+              <ul>
+
+                <li>Reduced manual document reading.</li>
+                <li>Delivered contextual AI-powered responses.</li>
+                <li>Built scalable modular backend.</li>
+                <li>Implemented practical LLM + RAG architecture.</li>
+
               </ul>
+
             </div>
 
-            <div className="project-section">
+            <div className="info-box">
 
-              <h4>Tech Stack</h4>
+              <h3>Tech Stack</h3>
 
               <div className="tech-stack">
 
@@ -131,11 +125,9 @@ function FeaturedProject() {
 
             </div>
 
-            
-
           </div>
 
-        </div>
+        </motion.div>
 
       </div>
     </section>

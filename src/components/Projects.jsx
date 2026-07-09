@@ -26,7 +26,33 @@ function Projects() {
 
       github: "github.com/sufiyatabassum308-stack"
     },
+    {
+  title: "Cyber Breach Prediction System",
 
+  problem:
+    "Organizations often struggle to identify potential cybersecurity breaches before they occur, making proactive threat prevention difficult.",
+
+  solution:
+    "Designed and developed a machine learning application to predict potential cybersecurity breaches using historical data, feature engineering, and predictive analytics. Built a Flask backend to serve prediction results through a web interface.",
+
+  impact: [
+    "Collected, cleaned, and preprocessed cybersecurity datasets.",
+    "Performed feature engineering to improve model performance.",
+    "Trained and evaluated multiple Scikit-learn models.",
+    "Achieved 87.6% prediction accuracy through model optimization.",
+    "Developed a Flask backend for real-time prediction results."
+  ],
+
+  tech: [
+    "Python",
+    "Flask",
+    "Machine Learning",
+    "Scikit-learn",
+    "Pandas",
+    "NumPy",
+    "Feature Engineering"
+  ]
+},
     {
       title: "Campus Complaint Resolution System",
 

@@ -1,14 +1,13 @@
 import "../styles/Skills.css";
+import { motion } from "framer-motion";
 
 function Skills() {
   const skillCategories = [
     {
       title: "Programming",
-      skills: [
-        "Python",
-        "SQL",
-      ],
+      skills: ["Python", "SQL"],
     },
+
     {
       title: "Generative AI",
       skills: [
@@ -21,19 +20,21 @@ function Skills() {
         "AI Agent Concepts",
       ],
     },
+
     {
       title: "Machine Learning",
       skills: [
         "Scikit-learn",
         "Random Forest",
         "Decision Tree",
-        "SVM",
+        "Support Vector Machine (SVM)",
         "CatBoost",
         "Data Preprocessing",
         "Feature Engineering",
         "Model Evaluation",
       ],
     },
+
     {
       title: "Backend & Databases",
       skills: [
@@ -45,6 +46,7 @@ function Skills() {
         "SQLite",
       ],
     },
+
     {
       title: "Tools & Software Engineering",
       skills: [
@@ -59,6 +61,7 @@ function Skills() {
         "Debugging",
       ],
     },
+
     {
       title: "Familiar With",
       skills: [
@@ -83,19 +86,28 @@ function Skills() {
         </h2>
 
         <p className="skills-description">
-          My technical expertise spans Generative AI, Machine Learning,
-          Backend Development, and Software Engineering, with a strong focus
-          on building intelligent, scalable, and production-ready applications.
+          My expertise spans Artificial Intelligence, Machine Learning,
+          Backend Development, and Software Engineering with hands-on
+          experience building intelligent and scalable applications.
         </p>
 
-        <div className="skills-grid">
+        <div className="skills-wrapper">
 
-          {skillCategories.map((category) => (
-            <div className="skill-card glass" key={category.title}>
+          {skillCategories.map((category, index) => (
+            <motion.div
+              className="skill-row"
+              key={category.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: .5, delay: index * .08 }}
+              viewport={{ once: true }}
+            >
 
-              <h3>{category.title}</h3>
+              <div className="skill-title">
+                {category.title}
+              </div>
 
-              <div className="skill-tags">
+              <div className="skill-items">
 
                 {category.skills.map((skill) => (
                   <span key={skill}>{skill}</span>
@@ -103,7 +115,7 @@ function Skills() {
 
               </div>
 
-            </div>
+            </motion.div>
           ))}
 
         </div>
